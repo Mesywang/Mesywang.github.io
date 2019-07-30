@@ -1,0 +1,11 @@
+# The meta-data of site.
+# © 2017-2019 Cotes Chung
+# MIT License
+
+google-ID: 'your_google_id'
+
+disqus-shortname: 'your_disqus_shortname'
+
+publication-date: 2017  # The Site's first publication date.
+
+url: 'http://localhost:4000' # Replace with your domain
