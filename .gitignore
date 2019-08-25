@@ -1,9 +1,9 @@
-# project
 _site
-.sass-cache
-.vagrant
-
-# general
+_posts/_draft
+node_modules
+npm-debug.log
 .DS_Store
-Thumbs.db
-ehthumbs.db
+*/.DS_Store
+*/*/.DS_Store
+*.sh
+.vscode
