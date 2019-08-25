@@ -1,14 +1,16 @@
 <section class="comment-area">
   <div class="comment-wrapper">
-   {% if site.intensedebate_identifier %}
-	  <div id="disqus_thread" class="article-comments"></div>
-	    <script>
-			var idcomments_acct = '{{ site.intensedebate_identifier }}';
-			var idcomments_post_id;
-			var idcomments_post_url;
-		</script>
-		<span id="IDCommentsPostTitle" style="display:none"></span>
-		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-	{% endif %}
+    {% if site.discus-identifier %}
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//{{ site.discus-identifier }}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% endif %}
   </div>
-</section>
+</section> <!-- End Comment Area -->

@@ -1,103 +1,37 @@
-title: Blog - Leach Chen
+title: Hello, world! I'm David Freeman
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 permalink: ':title/'
-#baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
+baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# Author settings add your name
-author: Leach Chen
+# Author Settings
+author: David Freeman # add your name
+author-img: david-freeman.jpg # add your photo
+about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: artemsheludko # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
 
-author-pic: leach-face.jpg
-about-author: I am an Android developer.I will add description latter.
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
 
-#修改成你自己的
-# Contact links
-website: # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-twitter: # Add your Twitter handle
-facebook: # Add your Facebook handle
-instagram: # Add your Instagram handle
-pinterest: # Add your Pinterest handle
+# Tracker
+analytics: # Google Analytics
 
-#修改成你自己的
-email:
-phone:
-github:
-jianshu:
-juejin:
-csdn:
-
-# Newsletter
-mailchimp: # Add your MailChimp form identifier.
-
-# Disqus修改成你自己的
-discus_identifier: leach-chen
-# Add your discus identifier
-
-#intensedebate修改成你自己的
-intensedebate_identifier:
-
-# Tracker Google Analytics修改成你自己的
-google-analysis:
-baidu-analysis:
-
-#youyan
-youyan-id: 2157296
-
-# Paginate
-paginate: 18
-paginate_path: /page:num/
-
-# Build settings
+# Build Settings
 markdown: kramdown
 plugins:
-  - jekyll-paginate
-  - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-include: [_pages]
+paginate: 8
+paginate_path: "/page/:num"
+
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
-imagepath: /blogdemo
-
-links:
-  - name:         Home
-    url:          https://www.leachchen.com
-    external:     false
-  - name:         About
-    url:          /blogdemo/about
-    external:     false
-
-#添加分类步骤：
-#1：在_config.yml links1及blog_中添加对应内容
-#2：在_includes里面headr.html中添加对应内容
-#3：在根目录blog文件中创建对应内容
-
-label1: <span style="font-size:12px">Publish by
-label2:  </span>
-
-
-links1:
-  - name:         所有
-    url:          /blog
-    type:         recent
-    external:     false
-  - name:         随笔
-    url:          /blogdemo/myblog/essays
-    type:         essays
-    external:     false
-  - name:         Jekyll
-    url:          /blogdemo/myblog/jekyll
-    type:         jekyll
-    external:     false
-
-blog_1:    recent
-blog_2:    essays
-blog_3:    jekyll
-
-
-
-#permalink: /:year/:month/:day/:title.html

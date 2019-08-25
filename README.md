@@ -1,37 +1,36 @@
+# Flexible-Jekyll is a simple and clean theme for Jekyll
 
-# Leach Chen Blog is a minimal clear theme for Jekyll
-![Leach Chen Blog - Imac](https://github.com/artemsheludko/adam-blog/blob/master/assets/img/adam-blog-imac.jpg?raw=true)
+![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
 
 ## Demo
-[网站出处（转载勿更改，尊重劳动成果）](https://github.com/leach-chen/blogdemo)
 
-[网站参考来源](https://github.com/artemsheludko/adam-blog)
-
-[网站搭建教程](https://github.com/leach-chen/blogdemo/jekyll-github-blog/)
-
-[网站效果预览（点击预览）](https://github.com/leach-chen/blogdemo)
+Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
 
 The main page would look like this:
 
-![Main page preview](https://leach-chen.github.io/blogdemo/other/img/mainpage.png)
+![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
 
 The post page would look like this:
 
-![Post page preview](https://leach-chen.github.io/blogdemo/other/img/articlepage.png)
+![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
 
 ## Features
 
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](http://fontawesome.io/)
 - [Disqus](https://disqus.com/)
-- [MailChimp](https://mailchimp.com/)
 - [Analytics](https://analytics.google.com/analytics/web/)
-- [Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+- Support Emoji
 
 ## Installation:
 
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
+Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
 
-### License
+## License
 
 GNU General Public License v3.0
+
+## Donate
+
+<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
+<p align="center"><b>Thank you for your support ❤️</b></p>
