@@ -1,87 +1,103 @@
-# Site settings
-title: Hector ’s Blog
-SEOTitle: Hector.Z的博客 | Hector.Z Blog
-header-img: img/home-bg.jpg
-email: 418918345@qq.com
-description: "May Your Heart Be The Map"
-keyword: ""
-url: "https://hectoor.github.io/"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+title: Blog - Leach Chen
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+#baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Author settings add your name
+author: Leach Chen
 
+author-pic: leach-face.jpg
+about-author: I am an Android developer.I will add description latter.
 
-# SNS settings
-RSS: false
-# weibo_username:   
-github_username:    Hectoor  
-#zhihu_username:     
-#twitter_username:  
-#facebook_username:  
+#修改成你自己的
+# Contact links
+website: # Add your website, do not add http://
+linkedin: # Add your Linkedin handle
+twitter: # Add your Twitter handle
+facebook: # Add your Facebook handle
+instagram: # Add your Instagram handle
+pinterest: # Add your Pinterest handle
 
+#修改成你自己的
+email:
+phone:
+github:
+jianshu:
+juejin:
+csdn:
 
+# Newsletter
+mailchimp: # Add your MailChimp form identifier.
+
+# Disqus修改成你自己的
+discus_identifier: leach-chen
+# Add your discus identifier
+
+#intensedebate修改成你自己的
+intensedebate_identifier:
+
+# Tracker Google Analytics修改成你自己的
+google-analysis:
+baidu-analysis:
+
+#youyan
+youyan-id: 2157296
+
+# Paginate
+paginate: 18
+paginate_path: /page:num/
 
 # Build settings
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-gems: [jekyll-paginate]
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+imagepath: /blogdemo
+
+links:
+  - name:         Home
+    url:          https://www.leachchen.com
+    external:     false
+  - name:         About
+    url:          /blogdemo/about
+    external:     false
+
+#添加分类步骤：
+#1：在_config.yml links1及blog_中添加对应内容
+#2：在_includes里面headr.html中添加对应内容
+#3：在根目录blog文件中创建对应内容
+
+label1: <span style="font-size:12px">Publish by
+label2:  </span>
+
+
+links1:
+  - name:         所有
+    url:          /blog
+    type:         recent
+    external:     false
+  - name:         随笔
+    url:          /blogdemo/myblog/essays
+    type:         essays
+    external:     false
+  - name:         Jekyll
+    url:          /blogdemo/myblog/jekyll
+    type:         jekyll
+    external:     false
+
+blog_1:    recent
+blog_2:    essays
+blog_3:    jekyll
 
 
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Duoshuo settings
-duoshuo_username: Bebop.C
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
-
-
-
-
-
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "一定会更疯狂。"
-sidebar-avatar: /img/hector.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Friends
-friends: [
-    {
-        title: "Bebop.C Blog",
-        href: "#"
-    },{
-        title: "Spike Spiegel",
-        href: "#"
-    },{
-        title: "Jet Black",
-        href: "#"
-    },{
-        title: "Faye Valentine",
-        href: "#"
-    },{
-        title: "Ein",
-        href: "#"
-    }
-]
+#permalink: /:year/:month/:day/:title.html
