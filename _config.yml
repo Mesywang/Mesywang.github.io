@@ -13,7 +13,8 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Shengyue Wang
-  tagline: A student learning in NorthEastern Universitiy of China,majoring in SLAM and Path planning of mobile robot.
+  tagline: A student learning in NorthEastern Universitiy of China,
+  majoring in SLAM and Path planning of mobile robot.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
