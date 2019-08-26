@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Shengyue Wang
-  tagline: Robotics engineer
+  tagline: A student learning in NorthEastern Universitiy of China,majoring in SLAM and Path planning of mobile robot.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
@@ -24,7 +24,7 @@ plainwhite:
     linkedIn: in/thelehhman
     rss: rss
     # dribbble: jekyll
-    # facebook: jekyll
+    # facebook: WSY
     # flickr:   jekyll
     # instagram: jekyll
     # linkedin: jekyll
