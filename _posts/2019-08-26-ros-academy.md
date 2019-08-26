@@ -10,7 +10,7 @@ categories: ROS
 
 本示例包含了XBot机器人和中科院软件博物馆仿真、ROS通信示例程序、导航与SLAM功能演示，在每个软件包下都有相应的功能介绍。
 
-![Gazebo仿真效果](../img/robot_sim_demo.gif)
+![Gazebo仿真效果](/img/robot_sim_demo.gif)
 
 如果你遇到任何问题，可以在Github上方的issues栏目中提问，我们课程团队会耐心回答。本示例将**长期维护**，**不断更新**，如果你认可我们的工作，请点击右上角的**star**按钮，您的鼓励是我们的动力。
 
@@ -87,4 +87,4 @@ $ source ~/catkin_ws/devel/setup.bash
 ---
 ## Copyright
 
-![Logo](../img/joint_logo.png)
+![Logo](/img/joint_logo.png)
