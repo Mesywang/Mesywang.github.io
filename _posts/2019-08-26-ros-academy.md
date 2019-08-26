@@ -5,7 +5,6 @@ date:   2019-08-26 17:25:50
 categories: ROS
 ---
 
-## 前言
 欢迎来到中国大学MOOC---[**《机器人操作系统入门》**](https://www.icourse163.org/)课程，本ROS软件包是课程的代码示例，课程中使用的例子均出自本代码包。除了代码包，课程还提供[讲义](https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163/content/)，欢迎各位朋友下载、学习和分享。
 
 本示例包含了XBot机器人和中科院软件博物馆仿真、ROS通信示例程序、导航与SLAM功能演示，在每个软件包下都有相应的功能介绍。
