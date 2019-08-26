@@ -1,6 +1,11 @@
-*.gem
-.bundle
-.sass-cache
+.*
+*.pyc
+
+# jekyll debug
 _site
+
+# Jeykll Gemfile.lock
 Gemfile.lock
-.DS_Store
+
+# yui-compressor
+*.jar
