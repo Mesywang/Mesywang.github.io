@@ -5,7 +5,7 @@ subtitle:  " "
 date:    2019-08-29
 author: ShengyueWang
 header-img: img/IU/iu2.jpg
-header-style: text
+catalog: true
 tags:
   - ROS 
   - Path Planning
