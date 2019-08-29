@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Navigation-Demo"
+header-img: img/IU-IU.jpg
 author: "ShengyueWang"
 header-style: text
 tags:
