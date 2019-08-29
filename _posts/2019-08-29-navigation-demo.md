@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Navigation-Demo"
-header-img: img/IU-IU.jpg
+header-img: img/IU/iu2.jpg
 author: "ShengyueWang"
 header-style: text
 tags:
   - ROS 
+  - Path Planning
 ---
 
 导航演示功能包，本演示包包含以下内容：
