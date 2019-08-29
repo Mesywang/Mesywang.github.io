@@ -78,7 +78,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "A student pursuing master's degree at NorthEastern University of China now, majoring in SLAM and Path Planning of mobile robot"    
+sidebar-about-description: "A student pursuing the master degree at NorthEastern University of China now, majoring in SLAM and Path Planning of mobile robot"    
 # "For the next quantum leap<br>离开世界之前，一切都是过程"
 sidebar-avatar: /img/dropout.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
 
