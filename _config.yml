@@ -1,11 +1,11 @@
 # Site settings
 title: Hello World
-SEOTitle: 徐洛冬的博客 | XuD's Blog
+SEOTitle: 王圣玥的博客 | WSY's Blog
 header-img: img/home-bg.jpg
-email: xunjtech@gmail.com
+email: wsy.neu@gmail.com
 description: "Dongdong 一个热爱生活而又不服输的Tenno,渴望拥有自己的中继站:)"
-keyword: "Deep learning,AI"
-url: "https://tcloser.github.io/Xu.github.io/"              # your host, for absolute URL
+keyword: "SLAM,Path Planning,Personal Blog"
+url: "https://mesywang.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,12 +13,12 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     u/6863579767?refer_flag=1005055010_&is_all=1
-zhihu_username:     dong-dong-mo-mo/activities
-github_username:    Tcloser
+weibo_username:     5250711702/profile?topnav=1&wvr=6&is_all=1
+zhihu_username:     wsy-54-44/activities
+github_username:    Mesywang
 # twitter_username:   huxpro
 #facebook_username:  huxpro
-linkedin_username:  洛冬-徐-395653190
+#linkedin_username:  洛冬-徐-395653190
 
 
 
@@ -78,14 +78,14 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/bilibili.gif      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "A student learning in NorthEastern University of China , majoring in SLAM and Path Planning of mobile robot"   #"For the next quantum leap<br>离开世界之前，一切都是过程"
+sidebar-avatar: /img/dog.JPG     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 
 
@@ -106,11 +106,12 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "Version1.0",
-        href: "https://tcloser.github.io/Xu.github.io/"
-    },{
-        title: "WSY_A robot developer",
-        href: "https://mesywang.github.io/"
+        title: "Luodong XU",
+        href: "https://tcloser.github.io/"
+    }
+    #,{
+    #    title: "Luodong XU",
+    #    href: "https://tcloser.github.io/"
     # },{
     #     title: "天镶的博客",
     #     href: "http://lingyu.wang/"
@@ -120,7 +121,7 @@ friends: [
     # },{
     #     title: "Ebn's Blog",
     #     href: "http://ebnbin.com/"
-    }
+    #}
     # },{
     #     title: "SmdCn's Blog",
     #     href: "http://blog.smdcn.net"
