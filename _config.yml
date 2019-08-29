@@ -1,7 +1,7 @@
 # Site settings
 title: Hello World
 SEOTitle: 王圣玥的博客 | WSY's Blog
-header-img: img/home-bg-art.jpg
+header-img: img/iu.jpg
 email: wsy.neu@gmail.com
 description: "WSY's personal blog"
 keyword: "SLAM,Path Planning,Personal Blog"
@@ -13,13 +13,13 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     5250711702/profile?topnav=1&wvr=6&is_all=1
-zhihu_username:     wsy-54-44/activities
+
 github_username:    Mesywang
+zhihu_username:     wsy-54-44/activities
+weibo_username:     5250711702/profile?topnav=1&wvr=6&is_all=1
 #twitter_username:   huxpro
 #facebook_username:  huxpro
 #linkedin_username:  洛冬-徐-395653190
-
 
 
 # Build settings
