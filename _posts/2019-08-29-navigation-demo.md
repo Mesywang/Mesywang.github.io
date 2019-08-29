@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Navigation-Demo"
+title: Navigation-Demo
+subtitle:  " "
+date:    2019-08-28
+author: ShengyueWang
 header-img: img/IU/iu2.jpg
-author: "ShengyueWang"
 header-style: text
 tags:
   - ROS 
