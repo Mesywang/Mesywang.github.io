@@ -4,7 +4,7 @@ title: Navigation-Demo
 subtitle:  " "
 date:    2019-08-29
 author: ShengyueWang
-header-img: img/IU/iu2.jpg
+header-img: img/IU/iu2.jpeg
 catalog: true
 tags:
   - ROS 
