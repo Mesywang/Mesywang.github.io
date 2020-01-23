@@ -48,12 +48,16 @@ tags:
 
 + 广度优先搜索(BFS)实例
 
-<img src="/img/Dijkstra&Astar/BFSDir.png" >
+<div align=center>
+	<img src="/img/Dijkstra&Astar/BFSDir.png" >
+</div>
 
 遍历结果为：A→B→C→E→F→D→G
 +  深度优先搜索(DFS)实例
 
-<img src="/img/Dijkstra&Astar/DFSDir.png" >
+<div align=center>
+	<img src="/img/Dijkstra&Astar/DFSDir.png" >
+</div>
 
 遍历结果为：A→B→C→E→D→F→G
 
@@ -211,6 +215,7 @@ tags:
 　　最后，在这里提供两版 A* 算法程序，第一版是 MATLAB 版本的2D空间下的 A* 算法，第二版是 ROS(C++) 版本3D空间下的A* 算法，代码都托管在Github上，供大家下载学习。~~求star 求star 求star！！！~~
 　　
 + MATLAB版本
+
 [程序源码链接](https://github.com/Mesywang/Astar-Algorithm-MATLAB)
 <div align=center>
 	<img src="/img/Dijkstra&Astar/AstarMatLab.png" >
@@ -218,11 +223,11 @@ tags:
 
 + ROS(C++)版本
 
-
+待更
 　　
 ## Reference　
 
-
+待更
 　　
 　　
 　　
