@@ -7,7 +7,7 @@ author: WSY
 header-img: img/IU/iu2.jpeg
 catalog: true
 tags:
-  - Motion Planning
+  - Path Planning
 ---
 
 ## 引言
@@ -193,7 +193,7 @@ tags:
 　　类似方法还有很多，总之，核心的思想就是**打破平衡性**，让 A* 有更大的目的性。
 
 
-## 算法源码分享
+## 源码分享
 　　最后，在这里提供两版 A* 算法程序，第一版是 MATLAB 版本的2D空间下的 A* 算法，第二版是 ROS(C++) 版本3D空间下的A* 算法，代码都托管在Github上**（~~求star~~）**，供大家下载学习。
 
 ###  MATLAB版本
