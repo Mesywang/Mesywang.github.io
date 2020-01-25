@@ -58,6 +58,7 @@ tags:
 遍历结果为：A→B→C→E→D→F→G
 
 + BFS和DFS对比
+
 　　下面通过一组动图来对比一下BFS和DFS的遍历效果，从动图中可以看出两种算法都可以找到一条路径通往目标节点，而显然DFS搜索的路径并不是最短路径，BFS扩展节点后回溯出来的路径是最短路径，所以后面要介绍的最短路径算法**Dijkstra 和 A*都是基于广度优先算法**。
 
 <img src="/img/Dijkstra&Astar/BFS&DFS.gif" >
