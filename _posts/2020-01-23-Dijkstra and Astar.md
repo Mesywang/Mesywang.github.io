@@ -48,16 +48,12 @@ tags:
 
 + 广度优先搜索(BFS)实例
 
-<div align=center>
-	<img src="/img/Dijkstra&Astar/BFSDir.png" >
-</div>
+<img src="/img/Dijkstra&Astar/BFSDir.png" >
 
 遍历结果为：A→B→C→E→F→D→G
 +  深度优先搜索(DFS)实例
 
-<div align=center>
-	<img src="/img/Dijkstra&Astar/DFSDir.png" >
-</div>
+<img src="/img/Dijkstra&Astar/DFSDir.png" >
 
 遍历结果为：A→B→C→E→D→F→G
 
@@ -102,14 +98,11 @@ tags:
 
 　　Dijkstra 算法伪代码如下图所示。
 
-<div align=center>
-	<img src="/img/Dijkstra&Astar/Dijkstraflow.png" >
-</div>
+<img src="/img/Dijkstra&Astar/Dijkstraflow.png" >
 
 　　以下是 Dijkstra 算法的一次迭代过程。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/DijkstraComplete.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/DijkstraComplete.png" >
 
 　　**使用 Dijkstra 对该图进行搜索所扩展的节点为：S→p→d→b→e→a→r→f→G**
 　　
@@ -119,10 +112,7 @@ tags:
 + **Dijkstra 缺点**：
 　　Dijkstra 不知道目标节点的位置，只能保证下一步扩展过的节点累计代价g(n)最小，因此如下图所示，它必须向所有方向扩展，目的性不强，所以算法效率不高。
 
-<div align=center>
-	<img src="/img/Dijkstra&Astar/DijkstraAllDir.png" >
-</div>
-
+<img src="/img/Dijkstra&Astar/DijkstraAllDir.png" >
 
 
 ## A* 算法
@@ -140,36 +130,31 @@ tags:
 
 　　A* 算法伪代码如下图所示。
 
-<div align=center>
-	<img src="/img/Dijkstra&Astar/Astarflow.png" >
-</div>
-
+<img src="/img/Dijkstra&Astar/Astarflow.png" >
 
 　　A* 算法完整的迭代过程如下图所示。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/AstarComplete.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/AstarComplete.png" >
 
 　　与前文提到的 Dijkstra 算法相比，A* 算法由于引入了启发函数 h(n)，所以它拓展节点的时候具有一定目的性(即向目标节点的方向扩展)，所以它搜索目标节点时所需要扩展的中间节点更少，因此算法效率更高。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/AstarGoalDir.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/AstarGoalDir.png" >
+
 　　但同时，由于采用了 Greedy Best First Search 算法的贪心思想，所以 A* 并不能保证具有完备性(即找到最优路径)。那么什么条件下，A* 具有完备性呢？下面直接给出算法完备性的条件，这里忽略证明，若感兴趣可自行查找相关论文。
 + 当**h(n) <= h*(n)**时  A* 具有完备性，这里 h*(n) 指节点 “n” 到目标节点的真实代价。
 
 　　前文介绍了两种 h(n) 的取法：欧式距离、曼哈顿距离，那么它们是否满足A* 的最优性呢？
-<div align=center>
-	<img src="/img/Dijkstra&Astar/GBFS.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/GBFS.png" >
 
 　　由上图，紫色为真实代价 h*(n) ，黄色为采用欧式距离作为 h(n) 的估计代价，绿色为采用曼哈顿距离作为 h(n) 的估计代价。显然：
 　　+ 采用欧式距离作为 h(n)，一定满足 h(n) <= h*(n)
 　　+ 当机器人只允许前后左右方向移动时，曼哈顿距离满足 h(n) <= h*(n)，若机器人可沿对角线移动，曼哈顿距离不一定保证 h(n) <= h*(n)
 
 ### Dijkstra VS A*
-<div align=center>
-	<img src="/img/Dijkstra&Astar/DijkstraVSAstar.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/DijkstraVSAstar.png" >
+
 　　介绍到这里，应该可以发现，实际上A* 就是一个带有启发性的 Dijkstra 算法，这一小节，主要总结梳理一下前面提到的一些算法之间联系，要**重点理解！！！**
 + 当 h(n) = 0 时，那么意味着  f(n) = g(n) , A*算法退化了Dijkstra算法。
 + 当 h(n) < h*(n) 时，A*算法可以找到最短路径，但是搜索效率略低，h(n)越小，意味着需要扩展的节点就越多，效率上越低，但是精度上越准确，因为它更趋近于Dijkstra算法。( h*(n) 表示从节点n到目标节点的真实代价 )
@@ -177,51 +162,51 @@ tags:
 + 当 h(n) >> g(n) 时，那么 f(n)的值就主要取决于 h(n)，A*就退化成了Greedy Best First Search。
 
 ### A* 算法的优化思路
-<div align=center>
-	<img src="/img/Dijkstra&Astar/AstarExam.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/AstarExam.png" >
+
 　　上图为采用欧氏距离作为 h(n) 的 A* 算法搜索结果，可以看到，过程中扩展了很多没有必要的节点，为什么会引起这种现象呢？
 　　+ 因为欧氏距离 << 真实的目标代价 h*(n) ，此时 h(n)会引导扩展很多不必要的栅格。
 
 　　实际上，对于无障碍物情况下真实目标代价 h*(n) 是闭氏解的( closed-form solution)。如下图：
-<div align=center>
-	<img src="/img/Dijkstra&Astar/AstarTrulyH.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/AstarTrulyH.png" >
+
 　　其闭氏解如下，感兴趣的可以自己推导一下，非常简单。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/closed-form solution.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/closed-form solution.png" >
+
 　　如下图，左面的是采用闭氏解的 h(n)，右面的是采用欧氏距离作为h(n)。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/DiagonalCompare.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/DiagonalCompare.png" >
 
 　　我们再看一下另外一种情况。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/TieBreaker.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/TieBreaker.png" >
+
 　　对于这种情形，我们可以考虑打破对称性，让 A* 具有某种倾向性，可以减少扩展没必要的节点。最简单地做法就是将 h(n) 值略微放大，但此时可能有人怀疑，扩大 h(n) 值会不会导致h(n) > h*(n)，从而破坏算法的完备性？一般不会，因为真实环境中会有很多障碍物，h 一般远远小于 h*，所以略微放大一点不会很大地影响完备性。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/TieBreakerForm.png" >
-</div>
+
+<img src="/img/Dijkstra&Astar/TieBreakerForm.png" >
+
 　　为了打破平衡性，其实还有很多办法，例如倾向于选择离起点 --- 终点连线距离更近的节点。
-<div align=center>
-	<img src="/img/Dijkstra&Astar/nearPath.png" >
-</div>
-　　类似方法还有很多，总之，核心的思想就是打破平衡性，让 A* 有更大的目的性。
+
+<img src="/img/Dijkstra&Astar/nearPath.png" >
+
+　　类似方法还有很多，总之，核心的思想就是**打破平衡性**，让 A* 有更大的目的性。
 
 
 ## 算法实践
-　　最后，在这里提供两版 A* 算法程序，第一版是 MATLAB 版本的2D空间下的 A* 算法，第二版是 ROS(C++) 版本3D空间下的A* 算法，代码都托管在Github上，供大家下载学习。~~求star 求star 求star！！！~~
+　　最后，在这里提供两版 A* 算法程序，第一版是 MATLAB 版本的2D空间下的 A* 算法，第二版是 ROS(C++) 版本3D空间下的A* 算法，代码都托管在Github上，供大家下载学习。
+　　~~求star 求star 求star！！！~~
 　　
-+ MATLAB版本
 
-[程序源码链接](https://github.com/Mesywang/Astar-Algorithm-MATLAB)
-<div align=center>
-	<img src="/img/Dijkstra&Astar/AstarMatLab.png" >
-</div>
+###  MATLAB版本
 
-+ ROS(C++)版本
++ [程序源码链接](https://github.com/Mesywang/Astar-Algorithm-MATLAB)
+
+<img src="/img/Dijkstra&Astar/AstarMatLab.png" >
+
+###  ROS(C++)版本
 
 待更
 　　
