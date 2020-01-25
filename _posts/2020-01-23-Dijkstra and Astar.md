@@ -67,9 +67,8 @@ tags:
 
 　　贪心最佳优先搜索(Greedy Best First Search)正如其名，是一种贪心算法，前面提到的BFS和DFS只是根据“First in”或者“Last in”来选择下一个节点，而Greedy Best First Search则是根据某些规则来选择“最佳节点”，称之为启发式(heuristic)。
 对于一个启发式函数，至少要满足以下两点要求：
-
-　　+ 能够指引向着离目标更近的方向前进。
-　　+ 容易计算，即能满足实时性要求。
++ 能够指引向着离目标更近的方向前进。
++ 容易计算，即能满足实时性要求。
 
 <img src="/img/Dijkstra&Astar/GBFS.png" >
 
@@ -195,15 +194,15 @@ tags:
 　　类似方法还有很多，总之，核心的思想就是**打破平衡性**，让 A* 有更大的目的性。
 
 
-## 算法实践
+## 算法源码分享
 　　最后，在这里提供两版 A* 算法程序，第一版是 MATLAB 版本的2D空间下的 A* 算法，第二版是 ROS(C++) 版本3D空间下的A* 算法，代码都托管在Github上，供大家下载学习。
-　　~~求star 求star 求star！！！~~
 　　
+　　~~求star 求star 求star！！！~~
+
 
 ###  MATLAB版本
 
 + [程序源码链接](https://github.com/Mesywang/Astar-Algorithm-MATLAB)
-
 <img src="/img/Dijkstra&Astar/AstarMatLab.png" >
 
 ###  ROS(C++)版本
