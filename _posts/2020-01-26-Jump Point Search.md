@@ -4,7 +4,7 @@ title: 基于图搜索的路径规划算法(二)：Jump Point Search(JPS)
 subtitle:  " "
 date:   2020-01-26
 author: WSY
-header-img: img/IU/iu2.jpeg
+header-img: img/IU/iu8.jpeg
 catalog: true
 tags:
   - Path Planning
@@ -12,6 +12,7 @@ tags:
 
 ## 引言
 　　JPS （Jump Point Search），又名跳点搜索算法，是由澳大利亚两位教授于 2011年提出的基于 **栅格**的寻路算法。**JPS算法在保留 A* 算法的框架的同时，进一步优化了 A* 算法寻找后继节点的操作**。之前一篇文章中详细系统地讲解了 Dijsktra 和 A* 算法的流程，由于 JPS 完整地保留了 A* 的框架，若大家不了解 A* ，请先移步此文：[Dijsktra、A* 详解](https://mesywang.github.io/2020/01/23/Dijkstra-and-Astar/)。
+　　
 　　前文提过 A* 在扩展节点时会扩展出很多对称的节点，浪费了很多计算资源，上面链接的文章中也介绍了一些简单的优化方法，例如，通过人为地加入某些规则使原本对称的节点计算出的 f(n) 有微小的偏差，从而打破这种对称性，使A* 有一定的倾向性。而 JPS 的本质也是**打破平衡性**，它是一个更系统的方法。
 　　
 <img src="../img/JPS/compare.png" >
