@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 基于图搜索的路径规划算法(二)：Jump Point Search 　　　　　  (JPS)
+title: 基于图搜索的路径规划算法(二)：Jump Point Search 　　　　　　(JPS)
 subtitle:  " "
 date:   2020-01-26
 author: WSY
-header-img: img/IU/iu12.jpg
+header-img: img/IU/iu19.jpg
 catalog: true
 tags:
   - Path Planning
@@ -54,7 +54,7 @@ tags:
 
 <img src="../img/JPS/Forced digonal.png" >
 
-　　刚刚讨论到，当对角线运动时，
+　　刚刚讨论到，当对角线运动时，我们只需考虑剩下的上、下、右上这三个邻居节点，有两个邻居需要直线运动(分别是向右和向上)，前面介绍过直线运动的规则，我们只需按照之前的规则对
 
 
 
