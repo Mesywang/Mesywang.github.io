@@ -94,13 +94,13 @@ tags:
 ## JPS vs A*
 　　先看两幅动图，分别使用 A* 和 JPS 在同一地图中搜索路径。第一幅是 A* 搜索路径的过程，第二幅是 JPS 的搜索过程。
 
-<img src="../img/JPS/AstarDemoGif.gif" >
+<img src="/img/JPS/AstarDemoGif.gif" >
 
-<img src="../img/JPS/JPSDemoGif.gif" >
+<img src="/img/JPS/JPSDemoGif.gif" >
 
 　　可以很明显地看出，在上述情况下，JPS 比 A* 效率要快很多，因为 JPS 采用了更聪明的方法，通过减少扩展节点的数量来提升速度。然而是否在所有情况下，JPS 都比 A* 优秀呢？再观看下面这幅动图。
 
-<img src="../img/JPS/JPS defect.gif" >
+<img src="/img/JPS/JPS defect.gif" >
 
 　　显然，这种情况下 JPS 算法就显得不那么智能了，因为在进行直线搜索时，为了确保这个方向上没有跳点，它必须递归地查询直到到达地图边界，上述示例中，JPS 花费了很久的时间来搜索左面的地图，但一个有价值的跳点都没找到。这种情况在移动机器人上是很普遍的现象，因为机器人传感器的视场角(FOV)是有限的，它一般只能感知一定角度的环境，所以若全局地图或局部地图很大的话，就会出现上述问题。有以下结论：
 + 一般情况下，尤其是在复杂环境下，JPS 的性能要比 A* 优异，但也不是绝对的。
