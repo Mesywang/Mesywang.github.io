@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 基于图搜索的路径规划算法(二)：Jump Point Search 　　　　　 (JPS)
+title: 基于图搜索的路径规划算法(二)：Jump Point Search 　　　　　  (JPS)
 subtitle:  " "
 date:   2020-01-26
 author: WSY
-header-img: img/IU/iu14.jpg
+header-img: img/IU/iu12.jpg
 catalog: true
 tags:
   - Path Planning
@@ -53,6 +53,11 @@ tags:
 　　同样地，对角线运动情况下，也存在携带 forced neighbor 的节点。如下图，此时紫色节点叫作绿的节点的 forced neighbor ，若障碍物在绿色节点下方，则右下角的节点为 forced neighbor 。
 
 <img src="../img/JPS/Forced digonal.png" >
+
+　　刚刚讨论到，当对角线运动时，
+
+
+
 
 ## 算法流程
 
