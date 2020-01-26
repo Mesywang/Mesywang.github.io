@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 基于图搜索的路径规划算法(二)：Jump Point Search 　　　　　（JPS）
+title: 基于图搜索的路径规划算法(二)：Jump Point Search
 subtitle:  " "
 date:   2020-01-26
 author: WSY
