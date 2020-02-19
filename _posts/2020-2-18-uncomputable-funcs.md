@@ -20,11 +20,8 @@ $$
 A = \{ \langle G \rangle \vert G \text{ is a connected undirected graph}\}
 $$
 
+$${w_k}{\text{ = }}{w_{k - 1}}p\left( {{y_k}|{x_k}} \right)$$
 
-
-${w_k}{\text{ = }}{w_{k - 1}}p\left( {{y_k}|{x_k}} \right)$
-
-\[{w_k}{\rm{ = }}{w_{k - 1}}p\left( {{y_k}|{x_k}} \right)\]
 
 由于图灵机只能接受字符串，所以这里的尖括号表示对图的「编码」。出于简单，我们全部使用现实计算机所使用的字母表
 $\Sigma = \\{0, 1\\}$，所以「编码」即一个对象的二进制字符串描述。
